@@ -1,4 +1,8 @@
 const addTo= (passed)=>{
+    let nonexistent=5;      
+    //On console.dir you will not find "nonexistent" variable. 
+    //This is because it would lazy look for the objects it need. 
+    //It doesnt need non existent for its functionality and hence will not load.
     const add=(inner)=>{
         return (passed+inner);
     }
